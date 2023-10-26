@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const generatedImage = document.getElementById("generatedImage");
+    const generateButton = document.getElementById("generateButton");
+
+    generateButton.addEventListener("click", function () {
+        // Generate a random color
+        const randomColor = getRandomColor();
+
+        // Set the background color of the image
+        generatedImage.style.backgroundColor = randomColor;
+    });
+
+    function getRandomColor() {
+        // Generate a random hexadecimal color code
+        return '#' + (Math.random().toString(16) + '000000').slice(2, 8);
+    }
+});
