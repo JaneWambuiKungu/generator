@@ -23,12 +23,8 @@ h1 {
     margin-top: 20px;
 }
 
-#generatedImage {
-    width: 200px;
-    height: 200px;
-    background-color: #3498db;
-    border-radius: 4px;
-    margin: 0 auto;
+#appointments {
+    text-align: left;
 }
 
 button {
